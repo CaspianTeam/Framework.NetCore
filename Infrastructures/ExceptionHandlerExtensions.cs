@@ -1,18 +1,17 @@
-﻿using System.Data.SqlClient;
-using System.Threading.Tasks;
-using System.Web;
-using CaspianTeam.Framework.NetCore.Enums.Frameworks.BaseController.AjaxForm.Alert;
+﻿using CaspianTeam.Framework.NetCore.Enums.Frameworks.BaseController.AjaxForm.Alert;
 using CaspianTeam.Framework.NetCore.Extensions;
 using CaspianTeam.Framework.NetCore.Models.Frameworks.BaseController.AjaxForm.Alert;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
+using System.Data.SqlClient;
+using System.Web;
 
 namespace CaspianTeam.Framework.NetCore.Infrastructures
 {
     public static class ExceptionHandlerExtensions
     {
-        public static async Task<HttpContext> CustomExceptionHandler(this HttpContext httpContext)
+        public static HttpContext CustomExceptionHandler(this HttpContext httpContext)
         {
             var error = httpContext.Features.Get<IExceptionHandlerFeature>();
             if (error != null)
@@ -25,7 +24,7 @@ namespace CaspianTeam.Framework.NetCore.Infrastructures
                     switch (ex.Number)
                     {
                         case 547:
-                            message = "اطلاعات مرتبط در دیتابیس موجود میباشد";
+                            message = "اطلاعات مرتبط در دیتابیس موجود می‌باشد";
                             break;
                     }
                 }

@@ -11,6 +11,7 @@ namespace CaspianTeam.Framework.NetCore.Infrastructures
             services.AddSingleton<IMemoryCacheManager, MemoryCacheManager>();
             services.AddTransient<IUtilityService, UtilityService>();
             services.AddTransient<IEmailService, EmailService>();
+            services.AddTransient<IImageService, ImageService>();
 
             return services;
         }

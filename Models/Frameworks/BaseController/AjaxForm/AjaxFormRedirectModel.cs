@@ -4,15 +4,10 @@ namespace CaspianTeam.Framework.NetCore.Models.Frameworks.BaseController.AjaxFor
 {
     public class AjaxFormRedirectModel
     {
-        public AjaxFormRedirectModel()
-        {
-            ResponseReturnType = ResponseReturnType.Redirect;
-        }
-
         /// <summary>
         /// Enum: ResponseReturnType
         /// </summary>
-        public ResponseReturnType ResponseReturnType { get; set; }
+        public ResponseReturnType ResponseReturnType { get; set; } = ResponseReturnType.Redirect;
         public string Redirect { get; set; }
     }
 }

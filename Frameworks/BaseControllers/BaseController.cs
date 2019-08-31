@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using CaspianTeam.Framework.NetCore.Enums.Frameworks.BaseController.AjaxForm.Alert;
+﻿using CaspianTeam.Framework.NetCore.Enums.Frameworks.BaseController.AjaxForm.Alert;
 using CaspianTeam.Framework.NetCore.Enums.Frameworks.BaseController.Magics;
 using CaspianTeam.Framework.NetCore.Enums.Frameworks.BaseController.Magics.KendoWindowHandler;
 using CaspianTeam.Framework.NetCore.Models.Frameworks.BaseController.AjaxForm;
@@ -10,6 +9,7 @@ using CaspianTeam.Framework.NetCore.Models.Frameworks.BaseController.Magics.Kend
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace CaspianTeam.Framework.NetCore.Frameworks.BaseControllers
 {
@@ -20,7 +20,6 @@ namespace CaspianTeam.Framework.NetCore.Frameworks.BaseControllers
         #region Alert
 
         #region AlertOverhang
-
         protected virtual JsonResult AjaxFormAlertOverhangSuccessful(
             string successfulMessage = "",
             bool automaticClose = true,

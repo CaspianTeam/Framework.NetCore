@@ -4,15 +4,10 @@ namespace CaspianTeam.Framework.NetCore.Models.Frameworks.BaseController.AjaxFor
 {
     public class AjaxFormJavaScriptExecuteFunctionModel
     {
-        public AjaxFormJavaScriptExecuteFunctionModel()
-        {
-            ResponseReturnType = ResponseReturnType.JavaScriptExecuteFunction;
-        }
-
         /// <summary>
         /// Enum: ResponseReturnType
         /// </summary>
-        public ResponseReturnType ResponseReturnType { get; set; }
+        public ResponseReturnType ResponseReturnType { get; set; } = ResponseReturnType.JavaScriptExecuteFunction;
         public string FunctionName { get; set; }
         public object ParameterModel { get; set; }
     }

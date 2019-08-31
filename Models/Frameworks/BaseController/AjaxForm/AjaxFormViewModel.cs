@@ -4,15 +4,10 @@ namespace CaspianTeam.Framework.NetCore.Models.Frameworks.BaseController.AjaxFor
 {
     public class AjaxFormViewModel
     {
-        public AjaxFormViewModel()
-        {
-            ResponseReturnType = ResponseReturnType.ViewModel;
-        }
-
         /// <summary>
         /// Enum: ResponseReturnType
         /// </summary>
-        public ResponseReturnType ResponseReturnType { get; set; }
+        public ResponseReturnType ResponseReturnType { get; set; } = ResponseReturnType.ViewModel;
         public object ViewModel { get; set; }
     }
 }
