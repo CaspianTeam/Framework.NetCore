@@ -46,7 +46,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="Microsoft.SourceLink.Vsts.Git" Version="1.0.0-*" PrivateAssets="All" />
-    <PackageReference Include="NuGet.CommandLine" Version="4.9.4">
+    <PackageReference Include="NuGet.CommandLine" Version="4.9.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
